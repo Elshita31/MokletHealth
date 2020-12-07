@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1000dp"
+        android:layout_height="250dp"
+        android:background="@drawable/rounded_background_orange"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/photo_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/nameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="32dp"
+        android:text="Suryakanta"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_toEndOf="@+id/imageview"
+        android:layout_toRightOf="@+id/imageview"/>
+
+    <TextView
+        android:id="@+id/classuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="XI RPL 3"
+        android:textColor="#FFF"
+        android:textSize="16dp"
+        android:layout_toEndOf="@+id/imageview"
+        android:layout_toRightOf="@+id/imageview"/>
+
+    <LinearLayout
+        android:id="@+id/rounded"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/rounded"
+        android:layout_below="@+id/imageview">
+
+        <TextView
+            android:id="@+id/activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="Activity"
+            android:textColor="#818181"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/calendar"/>
+
+                <TextView
+                    android:id="@+id/review_satu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textColor="#172646"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ceklist"/>
+
+                <TextView
+                    android:id="@+id/review_dua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="     Health Check"
+                    android:textColor="#172646"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/computer"/>
+
+                <TextView
+                    android:id="@+id/review_tiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="            Articel"
+                    android:textColor="#172646"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

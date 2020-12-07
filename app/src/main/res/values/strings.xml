@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Moklet Health</string>
+    <string name="heroes_name">Nama Mata Pelajaran</string>
+    <string name="human">Nama Guru</string>
+    <string name="article_title">Judul Artikel</string>
+    <string name="article_content">Isi Artikel</string>
+</resources>
